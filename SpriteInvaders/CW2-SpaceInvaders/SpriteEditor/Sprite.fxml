@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ColorPicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="bottomPane" prefHeight="885.0" prefWidth="980.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Control">
+   <children>
+      <ColorPicker fx:id="myColorPicker" layoutX="842.0" prefHeight="35.0" prefWidth="138.0" AnchorPane.topAnchor="0.0" />
+      <ScrollPane fx:id="myScrollPane" layoutX="76.0" layoutY="41.0" prefHeight="850.0" prefWidth="850.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="130.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="35.0" />
+      <MenuBar prefHeight="35.0" prefWidth="344.0" AnchorPane.topAnchor="0.0">
+        <menus>
+          <Menu mnemonicParsing="false" text="File">
+            <items>
+                  <MenuItem fx:id="myImage" mnemonicParsing="false" onAction="#onUpload" text="Upload a image" />
+                  <MenuItem fx:id="mySave" mnemonicParsing="false" onAction="#onSaveImage" text="Save" />
+              <MenuItem fx:id="myExit" mnemonicParsing="false" onAction="#onClose" text="Close" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Edit">
+            <items>
+              <MenuItem fx:id="myDelete" mnemonicParsing="false" onAction="#onClean" text="Delete" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Help">
+            <items>
+              <MenuItem fx:id="about" mnemonicParsing="false" onAction="#onAbout" text="About" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+      <Button fx:id="myClean" layoutX="704.0" mnemonicParsing="false" onAction="#onClean" prefHeight="35.0" prefWidth="138.0" text="Clean" AnchorPane.topAnchor="0.0" />
+      <Button fx:id="mySaveButton" layoutX="586.0" layoutY="-1.0" mnemonicParsing="false" onAction="#onSaveImage" prefHeight="35.0" prefWidth="119.0" text="Save" AnchorPane.topAnchor="0.0" />
+      <Button fx:id="myLoadButton" layoutX="470.0" mnemonicParsing="false" onAction="#onUpload" prefHeight="35.0" prefWidth="119.0" text="Load Image" AnchorPane.topAnchor="0.0" />
+      <Button fx:id="OnUserCreate" layoutY="486.0" mnemonicParsing="false" onAction="#onCreate" prefHeight="31.0" prefWidth="130.0" text="Create" AnchorPane.leftAnchor="0.0" />
+      <TextArea fx:id="ColumnText" layoutY="250.0" prefHeight="30.0" prefWidth="130.0" AnchorPane.leftAnchor="0.0" />
+      <TextArea fx:id="RowText" layoutY="376.0" prefHeight="30.0" prefWidth="130.0" AnchorPane.leftAnchor="0.0" />
+      <Label layoutY="111.0" prefHeight="47.0" prefWidth="130.0" text="Prefer Size" AnchorPane.leftAnchor="0.0">
+         <padding>
+            <Insets left="20.0" />
+         </padding>
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutY="219.0" prefHeight="31.0" prefWidth="77.0" text="Column:" AnchorPane.leftAnchor="0.0" />
+      <Label layoutY="345.0" prefHeight="31.0" prefWidth="54.0" text="Row:" AnchorPane.leftAnchor="0.0" />
+      <CheckBox fx:id="myPreview" layoutX="344.0" mnemonicParsing="false" onAction="#onPreview" prefHeight="35.0" prefWidth="130.0" text="Preview" AnchorPane.topAnchor="0.0" />
+   </children>
+</AnchorPane>

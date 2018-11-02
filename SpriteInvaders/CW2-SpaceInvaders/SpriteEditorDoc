@@ -1,0 +1,10 @@
+This document is for adding a new sprite editor.
+
+Author: Hao Zuo
+
+1.Write a fxml file to build the GUI
+2.Write a Control class for handling each action from user, creating work place, loading/saving/cleaning image, choosing color from color picker
+3.Write a main class to start primary stage
+4.Recorded video which shows how to use this editor has already put into moodle
+5.SpriteEditor.jar has already put into \bin folder
+6.All code files related to sprite editor have been put into SpriteEditor folder inside SpaceInvaders project

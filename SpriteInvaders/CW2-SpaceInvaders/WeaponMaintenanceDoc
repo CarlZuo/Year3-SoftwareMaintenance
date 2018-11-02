@@ -1,0 +1,9 @@
+This document is for adding a new weapon.
+
+Author: Hao Zuo
+
+1. add a new bonus type to BonusType class named as Cannon
+2. add "cannon.png" to "src/main/resources/assets/textures" for new bonus weapon Cannon
+3. add case Cannon to onBonusPickup() method in SapceInvadersApp class for player picking up the weapon and this case call deathCurse() method to use the Cannon weapon
+4. add a private void method named deathCurse() for new weapon to kill a random number of enemies
+5. change BONUS_SPAWN_CHANCE from 0.25f to 0.50f in Config class for increasing the chance of a bonus spawning from 25% to 50% when onEnemyKilled() method call spawnRandomBonus() method in SpaceInvadersApp class

@@ -1,0 +1,7 @@
+This document is for adding a new level.
+
+Author: Hao Zuo
+
+1. add a new class named Level1 which extends from SpaceLevel class for the new level 1
+2. change other 7 level classes' name for shuffling down one level number
+3. add "new Level8()" to initGame() method in SpaceInvadersApp class for initialising level 8 when the game start
